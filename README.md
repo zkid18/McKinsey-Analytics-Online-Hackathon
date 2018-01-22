@@ -45,22 +45,22 @@ The methods described in this file, helped me to reach the 4th place in private 
 
 ## Progress
 ### 1.Data cleaning.
-1.1 Removed NaN, outliers detection, feature engineering
+1. Removed NaN, outliers detection, feature engineering
 ### 2. Random Forest Alrogithm
-2.1 In a loop from 24 to 1500 with the step of 24, I found the proper number of trees, 800
-2.2 Using grid, I found the max_depth parametr = 10
-2.3 Tuned parametrs to overcome the imbalance of data source 
+1. In a loop from 24 to 1500 with the step of 24, I found the proper number of trees, 800
+2. Using grid, I found the max_depth parametr = 10
+3. Tuned parametrs to overcome the imbalance of data source 
 ### 3. Extra Trees Classifier
 Didn't worked welll. 
 ### 4.Logistic Regression
-3.1 Converted categorical features to numeric.
-3.2 Using Standatr Scaller normalize the data
-3.3 Tried to find the uselss features by removing each of them in the loop. Didn't helped too much.
-3.4 Tuned parametrs to overcome the imbalance of data source 
+1. Converted categorical features to numeric.
+2. Using Standatr Scaller normalize the data
+3. Tried to find the uselss features by removing each of them in the loop. Didn't helped too much.
+4. Tuned parametrs to overcome the imbalance of data source 
 ### 5. SVM
 As SVM has O(n^2) complexity, it took me more than 2 hours on `'Intel(R) Core(TM) i5-5257U CPU @ 2.70GHz' to compute it.` I decided to stop it
 ### 6.XGBoost
-6.1 Implemented the algorithm and tuned parametrs. The best result, which I used in a final submission is
+1. Implemented the algorithm and tuned parametrs. The best result, which I used in a final submission is
 `XGBClassifier(
  learning_rate =0.1,
  n_estimators=1000,
