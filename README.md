@@ -13,28 +13,28 @@ They now want to identify the leads' segments having a higher conversion ratio (
 
 Input variables:
 
-ID - Unique ID (can not be used for predictions)
-Gender - Sex of the applicant
-DOB - Date of Birth of the applicant
-Lead_Creation_Date - Date on which Lead was created
-City_Code - Anonymised Code for the City
-City_Category - Anonymised City Feature
-Employer_Code - Anonymised Code for the Employer
-Employer_Category1 - Anonymised Employer Feature
-Employer_Category2 - Anonymised Employer Feature
-Monthly_Income - Monthly Income in Dollars
-Customer_Existing_Primary_Bank_Code - Anonymised Customer Bank Code
-Primary_Bank_Type - Anonymised Bank Feature
-Contacted - Contact Verified (Y/N)
-Source - Categorical Variable representing source of lead
-Source_Category- Type of Source
-Existing_EMI - EMI of Existing Loans in Dollars
-Loan_Amount - Loan Amount Requested
-Loan_Period - Loan Period (Years)
-Interest_Rate - Interest Rate of Submitted Loan Amount
-EMI - EMI of Requested Loan Amount in dollars
-Var1 - Categorical variable with multiple levels
-Approved - (Target) Whether a loan is Approved or not (0/1)
+1. ID - Unique ID (can not be used for predictions)
+2. Gender - Sex of the applicant
+3. DOB - Date of Birth of the applicant
+4. Lead_Creation_Date - Date on which Lead was created
+5. City_Code - Anonymised Code for the City
+6. City_Category - Anonymised City Feature
+7. Employer_Code - Anonymised Code for the Employer
+8. Employer_Category1 - Anonymised Employer Feature
+9. Employer_Category2 - Anonymised Employer Feature
+10. Monthly_Income - Monthly Income in Dollars
+11. Customer_Existing_Primary_Bank_Code - Anonymised Customer Bank Code
+12. Primary_Bank_Type - Anonymised Bank Feature
+13. Contacted - Contact Verified (Y/N)
+14. Source - Categorical Variable representing source of lead
+15. Source_Category- Type of Source
+16. Existing_EMI - EMI of Existing Loans in Dollars
+17. Loan_Amount - Loan Amount Requested
+18. Loan_Period - Loan Period (Years)
+19. Interest_Rate - Interest Rate of Submitted Loan Amount
+20. EMI - EMI of Requested Loan Amount in dollars
+21. Var1 - Categorical variable with multiple levels
+22. Approved - (Target) Whether a loan is Approved or not (0/1)
 
 ## Evaluation Criteria
 
@@ -58,10 +58,10 @@ Didn't worked welll.
 3.3 Tried to find the uselss features by removing each of them in the loop. Didn't helped too much.
 3.4 Tuned parametrs to overcome the imbalance of data source 
 ### 5. SVM
-As SVM has O(n^2) complexity, it took me more than 2 hours on 'Intel(R) Core(TM) i5-5257U CPU @ 2.70GHz' to compute it. I decided to stop it
+As SVM has O(n^2) complexity, it took me more than 2 hours on `'Intel(R) Core(TM) i5-5257U CPU @ 2.70GHz' to compute it.` I decided to stop it
 ### 6.XGBoost
 6.1 Implemented the algorithm and tuned parametrs. The best result, which I used in a final submission is
-XGBClassifier(
+`XGBClassifier(
  learning_rate =0.1,
  n_estimators=1000,
  max_depth=4,
@@ -73,4 +73,4 @@ XGBClassifier(
  objective= 'binary:logistic',
  nthread=4,
  scale_pos_weight=1,
- seed=27)
+ seed=27)`
