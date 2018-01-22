@@ -74,3 +74,7 @@ As SVM has O(n^2) complexity, it took me more than 2 hours on `'Intel(R) Core(TM
  nthread=4,
  scale_pos_weight=1,
  seed=27)`
+
+2. Feature importance
+
+![Feature importance](feature_importance.png)
